@@ -4,6 +4,12 @@
 	"parameters": {
 		"workspaceName": {
 			"value": "sevice-synapse-analytics"
+		},
+		"sevice-synapse-analytics-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:sevice-synapse-analytics.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"sevice-synapse-analytics-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://mabelakeservice.dfs.core.windows.net"
 		}
 	}
 }
